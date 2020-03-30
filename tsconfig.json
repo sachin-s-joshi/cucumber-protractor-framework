@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+      "target": "es5",
+      "lib": [ "es6" ],
+      "module": "CommonJs",
+      "moduleResolution": "node",
+      "emitDecoratorMetadata": true,
+      "experimentalDecorators": true,
+      "sourceMap": true,
+      "declaration": false
+    },
+  
+    "include": [
+      "**/*.ts",
+      "./protractor.conf.ts",
+      "protractor.conf.ts"
+      //"features/**/pageObjects/*.ts"
+    ],
+  
+    "exclude": [
+      "node_modules"
+    ]
+  }

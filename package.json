@@ -1,0 +1,34 @@
+{
+  "name": "automation_matrix",
+  "version": "1.0.0",
+  "description": "none",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test",
+    "cucumber": "yo cucumber-steps",
+    "pree2e": "npm run && npm run webdriver:update --ignore_ssl --standalone --versions.standalone=3.9.0",
+    "webdriver:update": "webdriver-manager update",
+    "e2e": "protractor ./protractor.conf.js"
+  },
+  "keywords": [
+    "cucumber",
+    "serenity"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/chai": "^4.2.11",
+    "@types/chai-as-promised": "^7.1.2",
+    "@types/cucumber": "^4.0.7",
+    "@types/node": "^13.9.3",
+    "cucumber": "^4.0.0",
+    "cucumber-html-reporter": "^5.1.0",
+    "dotenv": "^8.2.0",
+    "generator-cucumber-steps": "^0.1.3",
+    "protractor": "^5.4.2",
+    "protractor-cucumber-framework": "6.0.0",
+    "ts-node": "^8.8.1",
+    "typescript": "^3.8.3",
+    "yo": "^3.1.1"
+  }
+}
