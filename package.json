@@ -4,7 +4,7 @@
   "description": "none",
   "main": "index.js",
   "scripts": {
-    "test": "npm test",
+    "test": "npm run e2e && node index.js",
     "cucumber": "yo cucumber-steps",
     "pree2e": "npm run && npm run webdriver:update --ignore_ssl --standalone --versions.standalone=3.9.0",
     "webdriver:update": "webdriver-manager update",
